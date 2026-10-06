@@ -314,9 +314,9 @@ sensor:
 
   
 touchscreen:
-  - platform: gt911
+  - platform: st7123
     interrupt_pin: GPIO23
-    update_interval: never
+    update_interval: 100ms
     reset_pin:
       pi4ioe5v6408: pi4ioe1
       number: 5
@@ -337,7 +337,7 @@ display:
     dimensions:
       height: 1280
       width: 720
-    model: M5Stack-Tab5
+    model: M5STACK-TAB5-ST7123
     reset_pin:
       pi4ioe5v6408: pi4ioe1
       number: 4
