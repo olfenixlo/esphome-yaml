@@ -73,6 +73,7 @@ font:
 
 
 lvgl:
+  rotation: 270
   on_boot:
     - rx8130.read_time:
     - script.execute: expand_nav_btn_click_area    # Expand the click area of nav rail buttons
